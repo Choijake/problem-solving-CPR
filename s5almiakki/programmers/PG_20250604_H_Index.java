@@ -4,7 +4,7 @@ public class PG_20250604_H_Index {
 
     class Solution {
 
-        public int solution(int[] citations) {
+        public int solution1(int[] citations) {
             Arrays.sort(citations);
             int high = citations[citations.length - 1];
             int low = 0;
@@ -35,6 +35,19 @@ public class PG_20250604_H_Index {
                     low = h;
                 }
             }
+        }
+
+        public int solution2(int[] citations) {
+            Arrays.sort(citations);
+            int answer = 0;
+            for (int i = citations.length - 1; i >= 0; i--) {
+                int articleCnt = citations.length - i;
+                int h = Math.min(articleCnt, citations[i]);
+                if (answer < h) {
+                    answer = h;
+                }
+            }
+            return answer;
         }
 
     }
