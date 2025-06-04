@@ -3,11 +3,11 @@ import java.util.*;
 public class PG_20250603_네트워크 {
 
     class Solution {
-    
+
         private boolean[] visited;
         private int computerCnt;
         private int[][] computers;
-        
+
         public int solution(int n, int[][] computers) {
             this.visited = new boolean[n];
             this.computerCnt = n;
@@ -22,7 +22,7 @@ public class PG_20250603_네트워크 {
             }
             return networkCnt;
         }
-        
+
         private void bfs(int startComputer) {
             Queue<Integer> queue = new ArrayDeque<>();
             queue.add(startComputer);
