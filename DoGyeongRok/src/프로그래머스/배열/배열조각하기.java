@@ -1,5 +1,8 @@
 package 프로그래머스.배열;
 
+// 2025-06-14
+// https://school.programmers.co.kr/learn/courses/30/lessons/181893
+
 import java.util.*;
 
 public class 배열조각하기 {
