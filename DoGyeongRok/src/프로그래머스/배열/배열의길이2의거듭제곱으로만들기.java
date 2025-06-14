@@ -5,7 +5,7 @@ package 프로그래머스.배열;
 
 import java.util.*;
 
-public class 배열의길이2의거듭제으로만들기 {
+public class 배열의길이2의거듭제곱으로만들기 {
     class Solution {
         public int[] solution(int[] arr) {
             List<Integer> list = new ArrayList<>();
