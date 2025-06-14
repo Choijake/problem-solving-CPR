@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250613_소수찾기 {
     private String[] strArr;
     private boolean[] visited;
     private int answer;

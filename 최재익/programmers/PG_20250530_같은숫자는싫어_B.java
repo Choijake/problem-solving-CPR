@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Solution {
+public class PG_20250530_같은숫자는싫어_B {
     public ArrayList<Integer> solution(int []arr) {
         ArrayList<Integer> answer = new ArrayList<Integer>();
         int preNum = 10;

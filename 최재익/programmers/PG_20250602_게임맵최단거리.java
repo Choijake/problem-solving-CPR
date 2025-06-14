@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250602_게임맵최단거리 {
     private int[] dr = {0, 0, 1, -1};
     private int[] dc = {1, -1, 0, 0};
     private int[][] maps;

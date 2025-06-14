@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250610_전화번호 {
     public boolean solution(String[] phone_book) {
         Arrays.sort(phone_book);
         for(int i=0; i<phone_book.length-1; i++){

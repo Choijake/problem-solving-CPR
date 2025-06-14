@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250609_최소직사각형 {
     public int solution(int[][] sizes) {
         int width = 0;
         int height = 0;

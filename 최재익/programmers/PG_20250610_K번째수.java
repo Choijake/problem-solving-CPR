@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250610_K번째수 {
     public List<Integer> solution(int[] array, int[][] commands) {
         List<Integer> answer = new ArrayList<>();
 

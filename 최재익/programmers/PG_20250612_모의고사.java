@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250612_모의고사 {
     public List<Integer> solution(int[] answers) {
         List<int[]> patterns = new ArrayList<>();
         patterns.add(new int[]{1, 2, 3, 4, 5});

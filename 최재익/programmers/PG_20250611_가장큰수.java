@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250611_가장큰수 {
     public String solution(int[] numbers) {
         String[] stringNumbers = new String[numbers.length];
         for(int i=0; i<numbers.length; i++){
