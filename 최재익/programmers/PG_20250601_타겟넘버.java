@@ -1,4 +1,4 @@
-class Solution {
+class PG_20250601_타겟넘버 {
     private int count = 0;
     private int[] numbers;
     private int target;

@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250603_기능개발 {
     private int[] progresses;
     private int[] speeds;
     private final int END = 100;

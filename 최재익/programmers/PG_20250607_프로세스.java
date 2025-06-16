@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PG_20250607_프로세스 {
     public int solution(int[] priorities, int location) {
         Queue<Integer> queue = new PriorityQueue<>(Collections.reverseOrder());
         for(int priority : priorities){
