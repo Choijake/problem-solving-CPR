@@ -72,5 +72,21 @@ public class PG_20250617_숫자_문자열과_영단어 {
         }
 
     }
+    
+    class Solution2 {
+        
+        public int solution(String s) {
+            String[] numWords = {
+                "zero", "one", "two", "three", "four",
+                "five", "six", "seven", "eight", "nine"
+            };
+            String result = s;
+            for (int i = 0; i <= 9; i++) {
+                result = result.replaceAll(numWords[i], String.valueOf(i));
+            }
+            return Integer.parseInt(result);
+        }
+        
+    }
 
 }
