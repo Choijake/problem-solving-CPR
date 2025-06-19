@@ -2,6 +2,7 @@ package 프로그래머스.구현;
 
 // 2025-06-18
 // https://school.programmers.co.kr/learn/courses/30/lessons/64061
+// 구현 + 스택
 
 import java.util.*;
 
