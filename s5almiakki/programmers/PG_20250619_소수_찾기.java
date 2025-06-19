@@ -103,4 +103,58 @@ public class PG_20250619_소수_찾기 {
 
     }
 
+    class Solution3 {
+
+        private final int[] isPrimes = new int[10_000_000]; // 1: prime number, else: not prime number
+
+        private char[] numbers;
+        private int isVisited; // bit mask
+        private int currentNumber = 0;
+        private int answer = 0;
+        private boolean[] isPrimePresents = new boolean[10_000_000];
+
+        // init isPrimes
+        {
+            for (int number = 2; number < isPrimes.length; number++) {
+                if (isPrimes[number] == -1) {
+                    continue;
+                }
+                isPrimes[number] = 1;
+                for (int multiple = (number << 1); multiple < isPrimes.length; multiple += number) {
+                    isPrimes[multiple] = -1;
+                }
+            }
+        }
+
+        public int solution(String numbers) {
+            this.numbers = numbers.toCharArray();
+            dfs(0);
+            return this.answer;
+        }
+
+        private void dfs(int depth) {
+            if (isPrimes[currentNumber] == 1) {
+                if (!this.isPrimePresents[currentNumber]) {
+                    this.isPrimePresents[currentNumber] = true;
+                    this.answer++;
+                }
+            }
+            if (depth == this.numbers.length) {
+                return;
+            }
+            for (int i = 0; i < this.numbers.length; i++) {
+                if ((isVisited & (1 << i)) != 0) {
+                    continue;
+                }
+                this.currentNumber *= 10;
+                this.currentNumber += numbers[i] - '0';
+                isVisited |= (1 << i);
+                dfs(depth + 1);
+                this.currentNumber /= 10;
+                isVisited &= ~(1 << i);
+            }
+        }
+
+    }
+
 }
