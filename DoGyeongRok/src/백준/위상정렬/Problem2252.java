@@ -1,5 +1,9 @@
 package 백준.위상정렬;
 
+// 2025-06-29
+// 줄 세우기
+// https://www.acmicpc.net/problem/2252
+
 import java.io.*;
 import java.util.*;
 
