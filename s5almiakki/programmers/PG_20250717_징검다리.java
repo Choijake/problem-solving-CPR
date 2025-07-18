@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class PG_S20250717_징검다리 {
+public class PG_20250717_징검다리 {
 
     class Solution {
 
