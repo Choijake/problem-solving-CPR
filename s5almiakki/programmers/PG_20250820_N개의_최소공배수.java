@@ -2,7 +2,7 @@ import java.util.*;
 
 public class PG_20250820_N개의_최소공배수 {
 
-    class Solution {
+    class Solution1 {
 
         private static final int MAX = 100;
         private static final List<Integer> PRIMES = new ArrayList<>();
@@ -40,6 +40,28 @@ public class PG_20250820_N개의_최소공배수 {
                 }
             }
             return answer;
+        }
+
+    }
+
+    class Solution2 {
+
+        public int solution(int[] arr) {
+            int answer = arr[0];
+            for (int i = 1; i < arr.length; i++) {
+                answer *= arr[i] / gcd(answer, arr[i]);
+            }
+            return answer;
+        }
+
+        private int gcd(int a, int b) {
+            if (a > b) {
+                int mod = a % b;
+                return mod == 0 ? b : gcd(b, mod);
+            } else {
+                int mod = b % a;
+                return mod == 0 ? a : gcd(a, mod);
+            }
         }
 
     }
