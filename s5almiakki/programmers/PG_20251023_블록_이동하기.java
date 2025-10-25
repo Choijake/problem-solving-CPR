@@ -181,18 +181,6 @@ public class PG_20251023_블록_이동하기 {
                 return new Robot(point1, point2, movementCnt + 1);
             }
 
-            public Robot rotateClockwise(Point fixedPoint) {
-                Point dPoint = getOtherPoint(fixedPoint).substract(fixedPoint);
-                Point rotatedDPoint = Direction.from(dPoint).rotateClockwise().point;
-                return new Robot(fixedPoint, fixedPoint.add(rotatedDPoint), movementCnt + 1);
-            }
-
-            public Robot rotateCounterClockwise(Point fixedPoint) {
-                Point dPoint = getOtherPoint(fixedPoint).substract(fixedPoint);
-                Point rotatedDPoint = Direction.from(dPoint).rotateCounterClockwise().point;
-                return new Robot(fixedPoint, fixedPoint.add(rotatedDPoint), movementCnt + 1);
-            }
-
             public Point getOtherPoint(Point point) {
                 return (points.first().equals(point)) ? points.last() : points.first();
             }
